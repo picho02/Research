@@ -17,14 +17,10 @@
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
 
+
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.research.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
-    <fragment
-        android:id="@+id/prueba"
-        android:name="com.example.research.Prueba"
+        android:id="@+id/fuzzgerminationcount"
+        android:name="com.example.research.FragmentFuzzGerminationCount"
         android:label="fragment_prueba"
-        tools:layout="@layout/fragment_prueba" />
+        tools:layout="@layout/fragment_fuzzgerminationcount" />
 </navigation>
