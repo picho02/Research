@@ -3,39 +3,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".FragmentFuzzGerminationCount"
-    android:orientation="vertical">
+    android:layout_margin="8dp">
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Escanee ingrese el codigo de barras" />
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal">
+
         <EditText
             android:id="@+id/etCodigo"
             android:layout_width="300dp"
-            android:layout_height="30dp"/>
+            android:layout_height="wrap_content" />
+
         <ImageButton
             android:id="@+id/ibLectorCodigo"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/ic_menu_camera"
-            android:layout_marginStart="8dp"/>
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_menu_camera" />
     </androidx.appcompat.widget.LinearLayoutCompat>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Seleccione una opción:"/>
+        android:text="Seleccione una opción:" />
+
     <Spinner
         android:id="@+id/spFuzzActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
-        android:spinnerMode="dialog"/>
+        android:spinnerMode="dialog" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccione la fecha" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="fecha"/>
+        <ImageButton
+            android:id="@+id/ibCalendar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/ic_calendar"/>
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/etFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
 
 </LinearLayout>

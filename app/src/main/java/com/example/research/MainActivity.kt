@@ -13,6 +13,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.example.research.databinding.ActivityMainBinding
 import com.example.research.db.DBBelice_PR
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -46,7 +47,6 @@ class MainActivity : AppCompatActivity() {
         val db = DBBelice_PR(this /*requieredcontex(), this@MainActivity*/)
         db.getFuzzGerminationCountLista()
         db.insertFuzzGerminationCount("nflknssn.kndsk","jsfkñmss", 122.0,"1998/12/01","jmsk")
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
