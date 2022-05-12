@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
-        val db = DBBelice_PR(this /*requieredcontex(), this@MainActivity*/)
+        val db = DBBelice_PR(this /*requireContex(), this@MainActivity*/)
         db.getFuzzGerminationCountLista()
         db.insertFuzzGerminationCount("nflknssn.kndsk","jsfkñmss", 122.0,"1998/12/01","jmsk")
     }

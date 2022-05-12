@@ -67,12 +67,30 @@
             android:layout_marginStart="30dp"
             android:src="@drawable/ic_calendar"/>
     </LinearLayout>
-
-
-    <EditText
-        android:id="@+id/etFecha"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number" />
+        android:text="Contador"/>
+    <EditText
+        android:id="@+id/etCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietComentarios"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Comments"
+            android:maxLength="10" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"/>
 
 </LinearLayout>

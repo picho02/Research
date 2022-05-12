@@ -7,4 +7,4 @@ data class FuzzGerminationCount(
     var fuzz_Activity_fgc: String,
     var fuzz_Count_fgc: Double,
     var date_fgc: String,
-    var comments:String, var data_update: Boolean)
+    var comments:String, var data_update: Int)

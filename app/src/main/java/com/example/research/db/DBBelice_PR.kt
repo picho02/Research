@@ -22,7 +22,7 @@ class DBBelice_PR(context: Context?) : DBHelper(context) {
             values.put("fuzz_Count_fgc",fuzz_Count_fgc)
             values.put("date_fgc",date_fgc.toString())
             values.put("comments",comments)
-            values.put("data_update",false)
+            values.put("data_update",1)
             id = db.insert(TABLE_FUZZ_GERMINATION_COUNT,null,values)
         } catch (e: Exception){
 
@@ -47,7 +47,7 @@ class DBBelice_PR(context: Context?) : DBHelper(context) {
                     cursorGerminationCount.getDouble(3),
                     cursorGerminationCount.getString(4),
                     cursorGerminationCount.getString(5),
-                    false
+                    1
                 )
                 listFuzzGerminationCount.add(temporal)
             }while (cursorGerminationCount.moveToNext())
@@ -71,7 +71,7 @@ class DBBelice_PR(context: Context?) : DBHelper(context) {
                 cursorGerminationCount.getDouble(3),
                 cursorGerminationCount.getString(4),
                 cursorGerminationCount.getString(5),
-                false
+                1
             )
         }
         cursorGerminationCount.close()
